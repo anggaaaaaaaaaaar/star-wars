@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
 
 function App() {
   return (
-    <div>
+    <div style={{ height: 'inherit' }}>
       <Header />
       <Wrapper>
         <RouterProvider router={router} />

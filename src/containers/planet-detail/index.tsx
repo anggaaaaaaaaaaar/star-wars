@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import dayjs from 'dayjs'
 import React, { useEffect, useMemo, useState } from 'react'
 import { useLocation } from 'react-router-dom'
@@ -48,12 +47,6 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   /* overflow: hidden; */
-`
-
-const GridCol = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `
 
 const Icon = styled.img`
