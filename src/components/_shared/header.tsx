@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 const HeaderContainer = styled.div`
@@ -11,6 +12,7 @@ const HeaderContainer = styled.div`
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1;
 `
 
 const Menu = styled.ul`
@@ -23,13 +25,17 @@ const MenuItem = styled.li`
   cursor: pointer;
 `
 
-const Header = () => {
+const Header: React.FC = () => {
+  const onClickMenu = (path: string) => {
+    window.location.href = path
+  }
+
   return (
     <HeaderContainer>
       <h1>Stars wars</h1>
       <Menu>
-        <MenuItem>Planet</MenuItem>
-        <MenuItem>Wishlist</MenuItem>
+        <MenuItem onClick={() => onClickMenu('/')}>Planet</MenuItem>
+        <MenuItem onClick={() => onClickMenu('/wishlist')}>Wishlist</MenuItem>
       </Menu>
     </HeaderContainer>
   )

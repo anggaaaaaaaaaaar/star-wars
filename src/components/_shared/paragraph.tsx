@@ -13,6 +13,10 @@ const paragraph = styled.p`
     font-family: 'Hanken Grotesk', sans-serif;
   }
 
+  &.wrap {
+    word-wrap: break-word;
+  }
+
   color: white;
 `
 
