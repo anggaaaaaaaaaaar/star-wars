@@ -56,7 +56,7 @@ const Index: React.FC = () => {
 
   useEffect(() => {
     const wishlist = Function.getLocalStorage('wishlist')
-    setData(wishlist)
+    setData(wishlist || [])
   }, [])
 
   // Calculate the starting index and ending index for the current page
